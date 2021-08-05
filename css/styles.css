@@ -1,193 +1,215 @@
 /* ==== CSS general- básico ==== */
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather', serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
 }
 
 .body {
-    background-image: url(../img/piano\ wallpaper\ 022\ -\ 1920x1080.jpg);
-    background-size: auto;
-    
-    
+  background-image: url(../img/piano\ wallpaper\ 022\ -\ 1920x1080.jpg);
+  background-size: auto;
 }
 
 .wrapper {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    background: rgba(183,157,111,.9);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(183, 157, 111, 0.9);
 }
 
-/* ==== Layout basico y alineación general ====  */
-
-/* Header */
+/* =================== Index.html ======================== */
 .header {
-    height: min-content;
-    max-height: 250px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,minmax(100px,1fr));
-    gap: px;
-    align-items: flex-start;
-    justify-items: center;
-    padding: 1rem 1rem;
+  height: min-content;
+  max-height: 250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: px;
+  align-items: flex-start;
+  justify-items: center;
+  padding: 1rem 1rem;
 }
 
 .header .header-element {
-    overflow: hidden;
-    object-fit: cover;
-    max-width: 300px;
-    width: 100%;
-    
+  overflow: hidden;
+  object-fit: cover;
+  max-width: 300px;
+  width: 100%;
 }
 
 .header .header-element img {
-    border: solid 3px #000;
-    box-sizing: border-box;
-    max-height: 150px;
-    max-width: 400px;
-    width: 100%;
-    object-fit: cover;
+  border: solid 3px #000;
+  box-sizing: border-box;
+  max-height: 150px;
+  max-width: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .header .brand {
-    display: grid;
-    text-align: center;
+  display: grid;
+  text-align: center;
 }
 
 .header .brand img {
-    justify-self: center;
-    width: auto;
-    height: 100%;
-    max-height: 150px;  
-    max-width: 200px;  
+  justify-self: center;
+  width: auto;
+  height: 100%;
+  max-height: 150px;
+  max-width: 200px;
 }
-
-
 
 /* Nav Bar */
 .nav-desktop {
-    min-height: 50px;
-    width: 100%;
-    background: #020202;
-    height: 6vh;
-    display: flex;
-    align-items: center;
+  min-height: 50px;
+  width: 100%;
+  background: #020202;
+  height: 6vh;
+  display: flex;
+  align-items: center;
 }
 .nav-desktop-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-desktop-menu-list {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-desktop-menu-list-link {
-    font-size: 2rem;
-    text-decoration: none; 
-    color: #ffffff;
-    
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .nav-desktop-menu-list-link:hover {
-    border-radius: 8px;
-    box-shadow: 3px 1px 3px #000000;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#000000));
-    background: -moz-linear-gradient(top, #999999, #000000)
-  }
+  border-radius: 8px;
+  box-shadow: 3px 1px 3px #000000;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#000000));
+  background: -moz-linear-gradient(top, #999999, #000000);
+}
 
-  /* Main */
+/* Main */
 
-  .main {
-      width: 100%;
-      background: rgba(183,157,111,.3);
-      display: grid;
-      justify-items: center;
+.main {
+  width: 100%;
+  background: rgba(183, 157, 111, 0.3);
+  display: grid;
+  justify-items: center;
+}
 
-  }
+.calltoAction {
+  background: #000000;
+  width: 100%;
+  min-height: 60px;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
 
-  .calltoAction {
-      background: #000000;
-      width: 100%;
-      min-height: 60px;
-      color: #fff;
-      display: grid;
-      align-items: center;
-      justify-content: center;
-  }
+.field {
+  display: flex;
+  margin: 3em auto;
+  width: 70%;
+  min-height: 70px;
+  min-width: 400px;
+  flex-direction: row;
+  box-shadow: 1px 1px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0 #000,
+    6px 6px 0 #000, 7px 7px 0 #000;
+}
 
-  .field {
-    display:flex;
-    margin:3em auto;
-    width:70%;
-    min-height: 70px;
-    min-width: 400px;
-    flex-direction:row;
-    box-shadow:
-     1px 1px 0 #000,
-     3px 3px 0 #000,
-     4px 4px 0 #000,
-     5px 5px 0 #000,
-     6px 6px 0 #000,
-     7px 7px 0 #000;
-  }
-  
-  .field>input[type=text] {
-    flex:1;
-    padding:0.6em;
-    border:0.2em solid #000;
-  }
-  
-  .field>button {
-    padding:0.6em 0.8em;
-    background-color:#000;
-    color:white;
-  }
+.field > input[type="text"] {
+  flex: 1;
+  padding: 0.6em;
+  border: 0.2em solid #000;
+}
 
-  .main .phrase {
-    text-align: center;
-    border: solid #000 3px;
-    border-radius: 15px;
-    padding: .5rem;
-    background: #BAA035;
-  }
+.field > button {
+  padding: 0.6em 0.8em;
+  background-color: #000;
+  color: white;
+}
 
-  .musicVideo{
-      padding: 2rem 0;
-  }
+.main .phrase {
+  text-align: center;
+  border: solid #000 3px;
+  border-radius: 15px;
+  padding: 0.5rem;
+  background: #baa035;
+}
 
+.musicVideo {
+  padding: 2rem 0;
+}
 
-  /* Footer */
-  .footer {
-      background: #000;
-      width: 100%;
-      min-height: 150px;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
+/* Footer */
+.footer {
+  background: #000;
+  width: 100%;
+  min-height: 150px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .footer .my-profile {
-      display: flex;
-      align-items: center;
-      padding: .5rem;
-      
-  }
+.footer .my-profile {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
 
-  .footer .my-profile a {
-      padding: 0 .2rem;
-  }
+.footer .my-profile a {
+  padding: 0 0.2rem;
+}
+
+/* =================== partituras.html ======================== */
+
+/* Tablas con las partituras */
+
+.musicSheetList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  justify-items: center;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+
+.sheetList {
+  width: 400px;
+  background: #baa035;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.sheetList td {
+  padding: 1rem;
+}
+
+.sheetList a {
+  color: #ffffff;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 9px;
+  box-shadow: 0px 1px 3px #000000;
+  text-shadow: 1px 1px 3px #666666;
+  border: solid #d1d1d1 2px;
+  background: #000000;
+}
+
+.sheetList a:hover {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#000000));
+}
