@@ -175,7 +175,7 @@
   padding: 0 0.2rem;
 }
 
-/* =================== partituras.html ======================== */
+/* =================== partituras.html y Recursos ======================== */
 
 /* Tablas con las partituras */
 
@@ -199,7 +199,8 @@
   padding: 1rem;
 }
 
-.sheetList a {
+.sheetList a,
+.resourcePreview a {
   color: #ffffff;
   padding: 0.5rem;
   text-decoration: none;
@@ -210,6 +211,51 @@
   background: #000000;
 }
 
-.sheetList a:hover {
+.sheetList a:hover,
+.resourcePreview a:hover {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#000000));
 }
+
+/* =================== recursos.html ======================== */
+
+/* Tarjetas con la vista previa del recurso */
+
+.resourcesList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  justify-items: center;
+  row-gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.resourcePreview {
+  width: 80%;
+  background: #baa035;
+  padding: 2rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.resourcePreviewImg {
+  text-align: center;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.resourcePreview h4 {
+  grid-column: span 2;
+}
+.resourcePreview p {
+  grid-column: span 2;
+}
+
+.resourcePreview a {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
