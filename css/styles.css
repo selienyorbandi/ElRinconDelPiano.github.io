@@ -182,14 +182,14 @@
 .musicSheetList {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   justify-items: center;
   row-gap: 2rem;
   padding: 2rem;
 }
 
 .sheetList {
-  width: 400px;
+  width:90%;
   background: #baa035;
   padding: 1rem;
   border-radius: 10px;
