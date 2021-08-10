@@ -25,6 +25,29 @@
   background: rgba(183, 157, 111, 0.9);
 }
 
+/* Go Up Button */
+.goUpButton {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1366px;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.goUpButton a {
+  font-size: 2rem;
+  color: rgba(107, 107, 107, 0.377);
+  filter: blur(1.5px);
+}
+
+.goUpButton a:hover {
+  filter: blur(.5px);  
+  font-size: 2.3rem;
+}
+
 /* =================== Index.html ======================== */
 .header {
   height: min-content;
@@ -175,6 +198,8 @@
   padding: 0 0.2rem;
 }
 
+
+
 /* =================== partituras.html y Recursos ======================== */
 
 /* Tablas con las partituras */
@@ -258,4 +283,3 @@
   display: flex;
   justify-content: center;
 }
-
