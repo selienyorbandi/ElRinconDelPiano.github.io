@@ -45,11 +45,13 @@
 }
 
 .goUpButton a:hover {
-  filter: blur(.5px);  
+  filter: blur(0.5px);
   font-size: 2.3rem;
 }
 
 /* =================== Index.html ======================== */
+
+/* Header */
 .header {
   width: 100%;
   display: grid;
@@ -138,7 +140,7 @@
   align-items: center;
   justify-content: center;
 }
-
+/* Searchbar */
 .field {
   display: flex;
   margin: 3em auto;
@@ -196,8 +198,6 @@
   padding: 0 0.2rem;
 }
 
-
-
 /* =================== partituras.html y Recursos ======================== */
 
 /* Tablas con las partituras */
@@ -212,7 +212,7 @@
 }
 
 .sheetList {
-  width:90%;
+  width: 90%;
   background: #baa035;
   padding: 1rem;
   border-radius: 10px;
@@ -280,4 +280,91 @@
   height: 50%;
   display: flex;
   justify-content: center;
+}
+/* ===================================== */
+/* =========== MEDIA QUERIES =========== */
+
+@media screen and (max-width: 723px) {
+  /* Main */
+  .main {
+    width: 100%;
+    display: block;
+  }
+
+  .calltoAction {
+    text-align: center;
+  }
+
+  .musicVideo iframe {
+    width: 100%;
+  }
+
+  /* Tablas con las partituras */
+  .musicSheetList {
+    display: block;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .sheetList {
+    width: 100%;
+    background: #baa035;
+    padding: 0.2rem;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  /* Header */
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* Searchbar */
+  .field {
+    display: flex;
+    margin: 3em auto;
+    width: 50%;
+    min-height: 70px;
+    min-width: 320px;
+    flex-direction: row;
+  }
+  /* Tarjetas con la vista previa del recurso */
+  .resourcesList {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 0;
+  }
+
+  .resourcePreview {
+    width: 100%;
+    background: #baa035;
+    border-radius: .3rem;
+    gap: 1rem;
+  }
+
+  .resourcePreview h4, p, a {
+    padding: .5rem;
+  }
+
+  /* Footer */
+  .footer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+
+  .footer p {
+    padding: 0 1rem;
+  }
+
+  .footer .my-profile {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .footer .my-profile a {
+    padding: 0 0.2rem;
+  }
 }
