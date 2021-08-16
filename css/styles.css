@@ -122,6 +122,10 @@
   background: -moz-linear-gradient(top, #999999, #000000);
 }
 
+.nav-mobile {
+  display: none;
+}
+
 /* Main */
 
 .main {
@@ -285,6 +289,87 @@
 /* =========== MEDIA QUERIES =========== */
 
 @media screen and (max-width: 723px) {
+  
+   /*== Nav Bar == */
+   .nav-desktop {
+     display: none;
+   }
+
+  .nav-mobile {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  .nav-mobile img {
+    height: 70%;
+    padding: 0 2rem;
+    
+  }
+  
+  .bar-btn {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 2rem;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0px;
+    top: 8vh;
+    background-color: rgba(0, 0, 0, .98);
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0;
+    z-index: 300;
+  }
+  
+  .nav-menu ul {
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    display: none;
+    line-height: 2rem;
+    margin: 2rem 0;
+    transition: all .5s;
+    list-style: none;
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration:none;
+  
+  }
+  
+  .nav-menu li a:active , .nav-menu li a:hover {
+    color: #baa035;
+    transition: all .5s;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+  }
+  
+  #check:checked ~ .nav-menu li {
+    display: block;
+    
+  }
+  
   /* Main */
   .main {
     width: 100%;
