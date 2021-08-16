@@ -402,6 +402,12 @@
     flex-direction: row;
     justify-content: space-between;
   }  
+
+/* Go Up Button */
+.goUpButton {
+  display: none;
+}
+
 }
 
 @media screen and (max-width: 488px) {
