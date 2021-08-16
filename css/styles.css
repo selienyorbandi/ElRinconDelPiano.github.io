@@ -311,6 +311,12 @@
     padding: 0.2rem;
     border-radius: 0;
   }
+
+  .sheetList tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  
 }
 
 @media screen and (max-width: 488px) {
