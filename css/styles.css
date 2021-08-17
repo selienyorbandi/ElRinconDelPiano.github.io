@@ -6,6 +6,10 @@
   font-family: "Merriweather", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   background-image: url(../img/piano\ wallpaper\ 022\ -\ 1920x1080.jpg);
   background-size: auto;
